@@ -1,0 +1,32 @@
+.body{
+margin: 3%;
+
+}
+.header{
+    display: grid;
+grid-template-columns: 70% 20% 10%;
+align-content: end;
+}
+#addDevice{
+    justify-self: end;
+}
+
+.preguntas{
+    margin: 2%;
+    padding: 3px 10px;
+    border: #bcc5c5 1px solid;
+ 
+}
+.acomodar{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-content: end;
+}
+.acomodar h2{
+    margin:0px;
+    height: 100%;
+    align-self: center;
+}
+.preguntas hr {
+   margin: 5px!important;
+}

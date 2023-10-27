@@ -1,0 +1,10 @@
+.cuerpo{
+    margin: 3%;
+}
+.boton{
+    width: 97%;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    justify-content: end;
+}

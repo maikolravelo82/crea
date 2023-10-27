@@ -1,0 +1,32 @@
+<div class="body">
+    <div class="header">
+<label class="display-6"> <strong>{{this.form.nombre}}</strong></label>
+<div *ngIf="this.form.nombre" id="addDevice">
+    <button mat-raised-button color="primary" (click)="addpregunta()">Anadir pregunta</button>
+</div>
+<div *ngIf="this.form.nombre" id="addDevice">
+    <button mat-raised-button color="primary" (click)="postear()">Guardar</button>
+</div>
+</div>
+<hr>
+<div class="content">
+<div *ngFor="let pregunta of preguntas">
+    <div class="preguntas">
+        <div class="acomodar">
+            
+    <h2>{{pregunta.Context}}</h2>
+
+    <div id="addDevice">
+       <button mat-raised-button color="primary" data-swal-template='#show' (click)="addRespuesta(pregunta.Formid)">Anadir Respuesta</button>
+    </div>
+</div>
+       <hr>  
+    <div *ngFor="let respuesta of respuestas">
+        <h3 *ngIf="pregunta.Formid ==respuesta.id">{{respuesta.contexto}}</h3>
+    </div>
+</div>
+</div>
+
+
+</div>
+</div>
